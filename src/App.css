@@ -1,0 +1,288 @@
+.App {
+  margin: 0;
+
+}
+
+@media (max-width: 768px) {
+  .headerContainer{
+  flex-direction: column;
+  gap: 2rem;
+}
+}
+
+.headerContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem ;
+  list-style: none;
+  padding: 1rem;
+  background-color: #121212;
+
+}
+.cartimg{
+  background-color: lightgray;
+  width: 1.7rem;
+  border-radius: 25px;
+  padding: 6px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.wrap:hover{
+  transform: scale(1.1);
+}
+
+.title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: aqua;
+}
+.miniheader{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem ;
+  list-style: none;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+li:hover{
+  transform: scale(1.2);
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.homeText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('./images/back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:82.5vh;
+  width: 100%;
+}
+
+.shop-btn{
+  width: 14rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 2rem;
+  background-color: #121212;
+  color: whitesmoke;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.shop-btn:hover{
+  transform: scale(1.1);
+
+}
+.best{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.bigText{
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+.opac{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+  color: white;
+  border-radius: 5px;
+}
+
+.shopping-container, .productContainer, .contactContainer{
+  background-color: whitesmoke;
+  height: 83vh;
+}
+
+.productContainer{
+ height: 100%;
+ padding-top: 2rem;
+}
+.product-grid{
+padding-left: 4rem;
+border-radius: 5px;
+display: grid;
+grid-template-rows: repeat(2,1fr);
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.productImage{
+  width: 14rem;
+  height: 20rem;
+}
+.itemContainer{
+  width: 18rem;
+  height: 27rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 7px  ;
+  margin-bottom: 2rem;
+
+}
+.addProduct{
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 7rem;
+  background-color: #121212;
+}
+
+.circle{
+  height: 25px;
+  width: 25px;
+  background-color: lightpink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+}
+.circles{
+  height: 25px;
+  width: 25px;
+  background-color: lightpink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212;
+  font-weight: bold;
+}
+.wrap{
+  position: relative;
+  cursor: pointer;
+}
+
+.shopping-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem ;
+  min-height: 82vh;
+  height: fit-content;
+  
+}
+.checkOutTitle{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.checkoutBtn, .closeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 10rem;
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.15s ease-in-out 0s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+.closeBtn{
+  width: 10rem;
+  background-color: lightpink;
+}
+.list{
+  font-size: 1.1rem;
+}
+.checkoutbox{
+  display: flex;
+  column-gap: 1rem;
+}
+.checkoutWrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  column-gap: 0.5rem;
+}
+.checkoutImage{
+  width: 6rem;
+}
+.signBtn{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0.3rem;
+  width: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+  transition: background-color 0.15s ease-in-out 0s;
+}
+.finalAmount{
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contactContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 82vh;
+}
+.socialContainer{
+margin-left: 2rem;
+}
+.socials{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 7rem;
+  cursor: pointer;
+}
+.socials:hover{
+  transform: scale(1.1);
+}
+.contactLocation{
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-align: center;
+ 
+}
